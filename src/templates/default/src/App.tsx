@@ -47,7 +47,7 @@ function TodoForm({ todos }: { todos: Todo[] }) {
         ⌄
       </div>
       <form
-        onSubmit={(e) => {
+        onSubmit={(e: any) => {
           e.preventDefault()
           addTodo(e.target[0].value)
           e.target[0].value = ''
